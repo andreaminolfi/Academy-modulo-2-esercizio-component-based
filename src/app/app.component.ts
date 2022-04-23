@@ -13,11 +13,6 @@ export class AppComponent {
     { id: 3, label: 'Silvia', gender: 'F', age: 70 },
   ];
 
-  deleteHandler(user: User) {
-    const indexToRemove = this.users.findIndex((u) => u.id === user.id);
-    this.users.splice(indexToRemove, 1);
-  }
-
   addHandler(user: User) {
     const newUser = {
       id: Date.now,
